@@ -1,0 +1,7 @@
+# Ignore all data files (they are too big for GitHub)
+data/
+
+# Specific file types just in case
+*.parquet
+*.csv
+*.json
