@@ -51,10 +51,10 @@ brand_rating_dist = (
 print(brand_rating_dist) #In n Out had the highest, where McDonald's has the lowest 
 
 #Save outputs to CSV
-rating_dist = df["stars_x"].value_counts(normalize = True).sort_index()
+rating_dist = df["stars_x"].value_counts(normalize = True).sort_index().reset_index()
 rating_dist.to_csv("outputs/rating_distribution.csv", index=False)
 
-year_dist = df["year"].value_counts(normalize = True).sort_index()
+year_dist = df["year"].value_counts(normalize = True).sort_index().reset_index()
 year_dist.to_csv("outputs/yearly_distribution.csv", index=False)
 
 brand_rating_dist.to_csv("outputs/brand_rating_dist.csv", index = False)

@@ -22,4 +22,6 @@
 - Column titles consists of: ['review_id', 'user_id', 'business_id', 'stars', 'date', 'text']
 
 ## qsr_reviews_scoped.parquet
-- Column titles consist of: 
+- Column titles consist of: ['review_id', 'user_id', 'business_id', 'stars_x', 'date', 'text',
+       'name', 'city', 'state', 'latitude', 'longitude', 'stars_y',
+       'review_count', 'categories', 'sentiment_score', 'sentiment_label']
