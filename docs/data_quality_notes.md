@@ -25,3 +25,22 @@
 - Column titles consist of: ['review_id', 'user_id', 'business_id', 'stars_x', 'date', 'text',
        'name', 'city', 'state', 'latitude', 'longitude', 'stars_y',
        'review_count', 'categories', 'sentiment_score', 'sentiment_label']
+
+## exploded_topics_qsr_reviews_scoped.parquet
+- Column titles consist of: ['review_id', 'user_id', 'business_id', 'stars_x', 'date', 'text',
+       'name', 'city', 'state', 'latitude', 'longitude', 'stars_y',
+       'review_count', 'categories', 'sentiment_score', 'sentiment_label',
+       'year', 'brand', 'topics']
+- Dropped rows with na in topic
+
+## Outputs/ brand_topic_table_mean
+- A table that shows the relative frequencies of each topic in each brand (2 way table)
+
+## Outputs/ brand_topic_table_counts
+- A table that shows the amount of reviews of each topic in each brand (2 way table)
+
+## Outputs/ brand_topic_sentiment_table
+- A table that shows the average sentiment score of each topic in each brand (2 way table)
+
+## Outputs/ brand_topic_sentiment_dist
+- For each brand + topic, it shows the mean, std, and count

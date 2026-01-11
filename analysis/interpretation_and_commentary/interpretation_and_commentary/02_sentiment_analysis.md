@@ -10,7 +10,7 @@ While sentiment and ratings are highly correlated (r = 0.96), they scale differe
 ![alt text](image-11.png)
 <div style="display: flex; justify-content: center; align-items: flex-start; gap: 10px;">
   <img src="image-9.png" alt="Proportion Chart" width="45%">
-  <img src="image-10.png" alt="Brand Stats" width="52%">
+  <img src="image-12.png" alt="Brand Stats" width="52%">
 </div>
 
 ## Brand-Level Sentiment Interpretations
