@@ -1,3 +1,15 @@
+"""
+Analyzes QSR brand performance by aggregating review volume and VADER sentiment 
+across five operational topics (Cleanliness, Food Quality, Price, Service, and Wait Time). 
+
+The script calculates:
+1. Topic Share of Voice: Relative frequency of topics per brand.
+2. Sentiment Benchmarking: Mean sentiment scores and volatility (std dev) by topic/brand.
+3. Cross-Tabulation: Comparative tables for review counts and average sentiment.
+
+Outputs are saved as CSVs to 'outputs/'
+"""
+
 import pandas as pd
 topic_df = pd.read_parquet("C:\\Users\\hsueh\\yelp-qsr-business-analysis\\data\\processed\\exploded_topics_qsr_reviews_scoped.parquet")
 print(topic_df.columns)
